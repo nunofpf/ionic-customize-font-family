@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="fontFamily" (ionChange)="onFontFamilyChange($event)">
+      <ion-list-header>
+        <ion-label>Font family</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Default</ion-label>
+        <ion-radio slot="end" value=""></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Liberation Serif</ion-label>
+        <ion-radio slot="end" value="liberation-serif-font"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+</ion-content>
